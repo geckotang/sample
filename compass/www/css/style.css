@@ -1,0 +1,40 @@
+.src-sprite, .src-img_100x200, .src-img_200x200, .src-img_50x50, .img_50, .img_100, .img_200 {
+  background: url('/images/src-s9130494a6d.png') no-repeat;
+}
+
+.src-img_100x200 {
+  background-position: 0 -200px;
+}
+
+.src-img_200x200 {
+  background-position: 0 0;
+}
+
+.src-img_50x50 {
+  background-position: 0 -400px;
+}
+
+[class*="img_"] {
+  border: 1px solid red;
+  -webkit-box-shadow: 0 0 10px black;
+  -moz-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
+}
+
+.img_50 {
+  background-position: 0 -400px;
+  height: 50px;
+  width: 50px;
+}
+
+.img_100 {
+  background-position: 0 -200px;
+  height: 200px;
+  width: 100px;
+}
+
+.img_200 {
+  background-position: 0 0;
+  height: 200px;
+  width: 200px;
+}

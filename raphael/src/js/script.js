@@ -8,10 +8,11 @@ var app = {
 		var r = Raphael(id, path_size, path_size);
 		var timer;
 		var z;
-		var color = '#000',
-			total = 100,
-			rad = 0;
-		//
+		var R = 120; // 円の半径
+		var color = '#000';
+		var rad = 0;
+		var stroke_w = 30;
+
 		// @param cx {Number} 円のx位置
 		// @param cy {Number} 円のy位置
 		// @param r {Number} 円の半径
@@ -27,11 +28,11 @@ var app = {
 			}else{
 				path=[["M",cx,cy-r], ["A",r,r,0,+(value>180),1,x,y]];
 			}
-			return {path: path, stroke: '#000'};
+			return {path: path, stroke: color};
 		};
 		z = r.path().attr({
-			'arc': [path_center, path_center, path_size/4, rad],
-			'stroke-width': 30
+			'arc': [path_center, path_center, R, rad],
+			'stroke-width': stroke_w
 		});
 		// 弧の角度を0から360に増やしていく
 		var init = true;
@@ -41,13 +42,13 @@ var app = {
 				spd = 0;
 			}
 			z.animate({
-				'arc': [path_center, path_center, path_size/4, rad]
+				'arc': [path_center, path_center, R, rad]
 			}, spd, '<', function(){
 				if (rad == 360) {
 					rad = 360;
 					z.attr({
-						'arc': [path_center, path_center, path_size/4, rad],
-						'stroke-width': 30
+						'arc': [path_center, path_center, R, rad],
+						'stroke-width': stroke_w
 					});
 					rad = 0;
 					init = true;

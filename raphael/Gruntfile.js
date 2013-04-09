@@ -43,7 +43,7 @@ module.exports = function(grunt){
 		// Configuration to be run (and then tested)
 		watch: {
 			livereload: {
-				files: ['example/*.html', 'src/script.js'],
+				files: ['example/*.html', 'src/js/script.js'],
 				tasks: ['copy', 'livereload']
 			}
 		}

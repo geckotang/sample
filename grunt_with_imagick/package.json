@@ -1,0 +1,27 @@
+{
+  "name": "GruntWithImagick",
+  "version": "1.0.0",
+  "description": "Grunt with node-imagemagick",
+  "main": "",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geckotang/grunt_with_imagick.git"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "@geckotang",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "matchdep": "~0.1.1",
+    "path": "~0.4.9",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.3.1",
+    "node-imagemagick": "~0.1.8"
+  },
+  "dependencies": {}
+}

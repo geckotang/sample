@@ -46,6 +46,9 @@ module.exports = function(grunt){
 				width: null, // magic word
 				customArgs: customArgs
 			    };
+			if (extname === '.psd') {
+				param.srcPath += '[0]';
+			}
 			im.resize(param, function(err, stdout, stderr){
 				if (err) {
 					throw err;

@@ -1,0 +1,27 @@
+{
+  "name": "Sample",
+  "version": "1.0.0",
+  "description": "Sample",
+  "main": "",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "@geckotang",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-compass": "~0.3.9",
+    "matchdep": "~0.1.1",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-regarde": "~0.1.1"
+  },
+  "dependencies": {}
+}
